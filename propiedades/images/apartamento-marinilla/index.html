@@ -1,0 +1,1233 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Bank Raiz - Inmobiliarias</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+
+    <!-- CSS
+	============================================ -->
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="css/plugins.css">
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <!-- Header Section Start -->
+
+    <header class="header-wrapper section">
+        <div class="header-top bg-theme-two section border-bm-1">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="header-top-info">
+                            <p class="text-white">Contáctenos - <a href="tel:+573118080211"> 311 808 0211</a></p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="header-section section bg-theme-two">
+            <div class="container">
+                <div class="row align-items-center">
+
+                    <div class="col-lg-2 col-6">
+                        <div class="header-logo">
+                            <!-- a href="index.html"><img src="images/logo-white.png" alt=""></a -->
+                        </div>
+                    </div>
+
+                    <div class="col-lg-10 col-6">
+                        <div class="header-mid_right-bar">
+                            <nav class="main-menu text-white d-lg-block d-none">
+                                <ul>
+                                    <li><a href="#">Inicio</a></li>
+                                    <li><a href="servicios.html">Servicios</a></li>
+                                    <li><a href="empresa.html">Nosotros</a></li>
+                                    <li class="has-dropdown"><a href="propiedades.html">Propiedades</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="properties-arriendo.html">Arriendo</a></li>
+                                            <li><a href="properties-venta.html">Venta</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="contacto.html">Contáctenos</a></li>
+                                </ul>
+                            </nav>
+                            <div id="search-overlay-trigger" class="search-icon">
+                                <a href="javascript:void(0)"><i class="fa fa-search"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mobile Menu -->
+                    <div class="mobile-menu white-m-bar order-12 d-block d-lg-none col"></div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Header Section End -->
+    </header>
+
+    <!--  search overlay -->
+    <div class="search-overlay" id="search-overlay">
+
+        <div class="search-overlay__header">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-md-6 ml-auto col-4">
+                        <!-- search content -->
+                        <div class="search-content text-right">
+                            <span class="mobile-navigation-close-icon" id="search-close-trigger"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="search-overlay__inner">
+            <div class="search-overlay__body">
+                <div class="search-overlay__form">
+                    <form action="#">
+                        <input type="text" placeholder="Search">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of search overlay -->
+
+    <!-- Hero Section Start -->
+    <div class="hero-section section">
+
+        <div class="hero-slider hero-slider-one">
+            <div class="hero-slide-item" style="background-image: url(images/slider/slide-01.jpg)">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="row main-logo text-center">
+                            <img src="images/main-logo.svg" alt="">
+                        </div>
+
+                        
+                            <!-- Search Section Start -->
+                                <div class="search-section section">
+                                    <div class="container">
+
+                                        <div class="search-wrap">
+                                            <div class="row">
+                                                <div class="col text-center">
+                                                   <h1>Encuentra su Propiedad</h1>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="property-search-wrap">
+
+                                                <div class="row">
+
+                                                    <div class="col-lg-3 col-sm-6 mb-25">
+                                                        <label for="tipo">Tipo de propiedad:</label>
+                                                        <select id="tipo" class="nice-select">
+                                                            <option value="">Todos</option>
+                                                            <option value="casa">Casa</option>
+                                                            <option value="apartamento">Apartamento</option>
+                                                            <option value="finca">Finca</option>
+                                                            <option value="lote">Lote</option>
+                                                            <option value="oficina">Oficina</option>
+                                                        </select>
+                                                    </div>
+
+                                                    <div class="col-lg-3 col-sm-6 mb-25">
+                                                        <label for="categoria">Categoría:</label>
+                                                        <select id="categoria" class="nice-select">
+                                                            <option value="">Todos</option>
+                                                            <option value="arriendo">Arriendo</option>
+                                                            <option value="venta">Venta</option>
+                                                        </select>
+                                                    </div>
+
+                                                    <div class="col-lg-3 col-sm-6 mb-25">
+                                                        <label for="ubicacion">Ubicación:</label>
+                                                        <input class="input_search" type="text" id="ubicacion">
+                                                    </div>
+
+                                                   
+                                                </div>
+
+                                                <div class="row">
+
+                                                    <div class="col-lg-3 col-sm-6 mb-25">
+                                                        <label for="precioMin">Precio mínimo:</label>
+                                                        <input class="input_search" type="number" id="precioMin">
+                                                    </div>
+
+                                                    <div class="col-lg-3 col-sm-6 mb-25">
+                                                        <label for="precioMax">Precio máximo:</label>
+                                                        <input class="input_search" type="number" id="precioMax">
+                                                    </div>
+
+                                                    <div class="col-lg-3 col-sm-6 mb-25">
+                                                        <label > - </label>
+                                                        <button class="button_search" onclick="filtrar()">Filtrar</button>
+                                                    </div>
+
+
+                                                </div>
+
+                                            </div>
+                                            
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!-- Search Section End -->
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Hero Section End -->
+
+    
+
+
+    <!-- Seccion de Propiedades  //recordatorio -->
+    <div id="propiedades" class="featured-properites-section section pt-100 pt-md-80 pt-sm-60">
+        <div class="container">
+
+
+            <div class="row "> <!-- Fila Casas -->
+                <h1 data-tipo="casas">Casas</h1>
+
+                <!-- Propiedad Datos -->
+                <div class="propiedad col-lg-3 col-sm-6" data-tipo="finca" data-ubicacion="rionegro" data-precio="1850000000" data-categoria="venta">
+                    <div class="single-property mt-30">
+                        <div class="property-img">
+                            <a href="propiedades/abreo-rionegro.html">
+                                <img src="propiedades/images/rionegro-abreo/inicio.jpg" alt="">
+                            </a>
+                            <span class="level-stryker">FINCA EN VENTA</span>
+                        </div>
+                        <div class="property-desc">
+                            <h4><a href="#">Finca</a></h4>
+                            <p>
+                                <span class="location">Rionegro - Abreo</span>
+                                <span class="property-info">9.500 mt2 Terreno - 228 mt2 Casa - 4 Habitaciones </span>
+                            </p>
+                            <div class="price-box">
+                                <p>Precio $1.850.000.000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Finaliza Propidad -->
+
+
+                <!-- Propiedad Datos -->
+                <div class="propiedad col-lg-3 col-sm-6" data-tipo="finca" data-ubicacion="la ceja" data-precio="2950000000" data-categoria="venta">
+                    <div class="single-property mt-30">
+                        <div class="property-img">
+                            <a href="propiedades/finca-ceja.html">
+                                <img src="propiedades/images/finca-ceja/inicio.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="property-desc">
+                            <h4><a href="#">Finca</a></h4>
+                            <p>
+                                <span class="location">La Ceja</span>
+                                <span class="property-info">Hermosa Casa Finca en la via la Ceja - Rionegro</span>
+                            </p>
+                            <div class="price-box">
+                                <p>Precio $2.950.000.000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Finaliza Propidad -->
+
+
+               
+                <!-- Propiedad Datos -->
+                <div class="propiedad col-lg-3 col-sm-6" data-tipo="lote" data-ubicacion="el retiro" data-precio="200000" data-categoria="venta">
+                    <div class="single-property mt-30">
+                        <div class="property-img">
+                            <a href="propiedades/lote-el-retiro.html">
+                                <img src="propiedades/images/lote-el-retiro/inicio.jpg" alt="">
+                            </a>
+                            <span class="level-stryker-2">VENTA</span>
+                        </div>
+                        <div class="property-desc">
+                            <h4><a href="#">Lote</a></h4>
+                            <p>
+                                <span class="location">El Retiro</span>
+                                <span class="property-info">Ubicado en una zona de gran potencial y desarrollo </span>
+                            </p>
+                            <div class="price-box">
+                                <p>Precio $295.000.000</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Finaliza Propidad -->
+
+
+                 <!-- Propiedad Datos -->
+                 <div class="propiedad col-lg-3 col-sm-6" data-tipo="casa-finca" data-ubicacion="marinilla" data-precio="3000000" data-categoria="arriendo">
+                    <div class="single-property mt-30">
+                        <div class="property-img">
+                            <a href="propiedades/casa-finca-chagualo.html">
+                                <img src="propiedades/images/casa-finca-chagualo/inicio.jpg" alt="">
+                            </a>
+                            <span class="level-stryker-2">ARRIENDO</span>
+                        </div>
+                        <div class="property-desc">
+                            <h4><a href="#">Casa Finca</a></h4>
+                            <p>
+                                <span class="location">Marinilla - El Chagualo</span>
+                                <span class="property-info">Ubicado en la vereda el Chagualo con bonita vista </span>
+                            </p>
+                            <div class="price-box">
+                                <p>Precio $3.000.000</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Finaliza Propidad -->
+
+
+                  <!-- Propiedad Datos -->
+                  <div class="propiedad col-lg-3 col-sm-6" data-tipo="casa" data-ubicacion="la ceja" data-precio="750000000" data-categoria="venta">
+                    <div class="single-property mt-30">
+                        <div class="property-img">
+                            <a href="propiedades/casa-ceja.html">
+                                <img src="propiedades/images/casa-ceja/inicio.jpg" alt="">
+                            </a>
+                            <span class="level-stryker-2">VENTA</span>
+                        </div>
+                        <div class="property-desc">
+                            <h4><a href="#">Casa</a></h4>
+                            <p>
+                                <span class="location">La Ceja</span>
+                                <span class="property-info">Ubicado en el sector Fontibón - Unidad Olivar </span>
+                            </p>
+                            <div class="price-box">
+                                <p>Precio $750.000.000</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Finaliza Propidad -->
+
+  
+            </div>  <!-- Finaliza Fila Casas -->
+ 
+
+
+            <div class="row"> <!-- Fila Apartamentos -->
+                <h1 data-tipo="apartamento">Apartamentos</h1>
+
+                 <!-- Propiedad Datos -->
+                 <div class="propiedad col-lg-3 col-sm-6" data-tipo="apartamento" data-ubicacion="guarne" data-precio="" data-categoria="venta">
+                    <div class="single-property mt-30">
+                        <div class="property-img">
+                            <a href="propiedades/proyecto-avellano.html">
+                                <img src="propiedades/images/proyecto-avellano/inicio.jpg" alt="">
+                            </a>
+                            <span class="level-stryker-2">VENTA</span>
+                        </div>
+                        <div class="property-desc">
+                            <h4><a href="#">Proyeto Avellano</a></h4>
+                            <p>
+                                <span class="location">Guiarne</span>
+                                <span class="property-info">Proyecto Avellano, en la mejor ubicación de Guarne</span>
+                            </p>
+                            <div class="price-box">
+                                <p>Proyecto Nuevo</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Finaliza Propidad --> 
+
+
+                 <!-- Propiedad Datos -->
+                 <div class="propiedad col-lg-3 col-sm-6" data-tipo="apartamento" data-ubicacion="la ceja" data-precio="220000000" data-categoria="venta">
+                    <div class="single-property mt-30">
+                        <div class="property-img">
+                            <a href="propiedades/apartamento-ceja.html">
+                                <img src="propiedades/images/apartamento-ceja/inicio.jpg" alt="">
+                            </a>
+                            <span class="level-stryker-2">VENTA</span>
+                        </div>
+                        <div class="property-desc">
+                            <h4><a href="#">Apartamento Nuevo</a></h4>
+                            <p>
+                                <span class="location">La Ceja</span>
+                                <span class="property-info">Apartamento con acabados nuevos y buen espacio</span>
+                            </p>
+                            <div class="price-box">
+                                <p>Precio $220.000.000</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Finaliza Propidad -->
+
+
+                <!-- Propiedad Datos -->
+                <div class="propiedad col-lg-3 col-sm-6" data-tipo="apartamento" data-ubicacion="cerete" data-precio="350000000" data-categoria="venta">
+                    <div class="single-property mt-30">
+                        <div class="property-img">
+                            <a href="propiedades/apartamento-cerete.html">
+                                <img src="propiedades/images/apartamento-cerete/inicio.jpg" alt="">
+                            </a>
+                            <span class="level-stryker-2">VENTA</span>
+                        </div>
+                        <div class="property-desc">
+                            <h4><a href="#">2 Apartamentos</a></h4>
+                            <p>
+                                <span class="location">Cereté - Córdoba</span>
+                                <span class="property-info">Apartamento con acabados nuevos y buen espacio</span>
+                            </p>
+                            <div class="price-box">
+                                <p>Precio $350.000.000</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Finaliza Propidad --> 
+
+
+                 <!-- Propiedad Datos -->
+                 <div class="propiedad col-lg-3 col-sm-6" data-tipo="apartamento" data-ubicacion="rionegro" data-precio="1600000" data-categoria="arriendo">
+                    <div class="single-property mt-30">
+                        <div class="property-img">
+                            <a href="propiedades/apartamento-fontibon.html">
+                                <img src="propiedades/images/apartamento-fontibon/inicio.jpg" alt="">
+                            </a>
+                            <span class="level-stryker-2">ARRIENDO</span>
+                        </div>
+                        <div class="property-desc">
+                            <h4><a href="#">Apartamento</a></h4>
+                            <p>
+                                <span class="location">Rionegro - Fontibón</span>
+                                <span class="property-info">Ubicado en el sector Fontibón - Unidad Olivar </span>
+                            </p>
+                            <div class="price-box">
+                                <p>Precio $1.600.000</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Finaliza Propidad -->
+
+                 <!-- Propiedad Datos -->
+                 <div class="propiedad col-lg-3 col-sm-6" data-tipo="apartaestudio" data-ubicacion="sabaneta" data-precio="465000000" data-categoria="venta">
+                    <div class="single-property mt-30">
+                        <div class="property-img">
+                            <a href="propiedades/apartaestudio-sabaneta.html">
+                                <img src="propiedades/images/apartaestudio-sabaneta/inicio.jpg" alt="">
+                            </a>
+                            <span class="level-stryker-2">VENTA</span>
+                        </div>
+                        <div class="property-desc">
+                            <h4><a href="#">Apartaestudio</a></h4>
+                            <p>
+                                <span class="location">Sabaneta</span>
+                                <span class="property-info">Apartaestudio con 54 mt2, parqueadero y cuarto útil </span>
+                            </p>
+                            <div class="price-box">
+                                <p>Precio $465.000.000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Finaliza Propidad -->
+
+                 <!-- Propiedad Datos -->
+                 <div class="propiedad col-lg-3 col-sm-6" data-tipo="apartamento" data-ubicacion="marinilla" data-precio="300000000" data-categoria="venta">
+                    <div class="single-property mt-30">
+                        <div class="property-img">
+                            <a href="propiedades/apartamento-marinilla.html">
+                                <img src="propiedades/images/apartamento-marinilla/imagen-1.jpeg" alt="">
+                            </a>
+                            <span class="level-stryker-2">VENTA</span>
+                        </div>
+                        <div class="property-desc">
+                            <h4><a href="#">Apartamento</a></h4>
+                            <p>
+                                <span class="location">Marinilla</span>
+                                <span class="property-info">Apartamento con 128 mt2, parqueadero privado, 3 habitaciones, 3 baños, patio </span>
+                            </p>
+                            <div class="price-box">
+                                <p>Precio $300.000.000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Finaliza Propidad -->
+                
+
+                <!-- Propiedad Datos -->
+                <div class="propiedad col-lg-3 col-sm-6" data-tipo="apartamentos" data-ubicacion="rionegro" data-precio="16000000" data-categoria="arriendo">
+                    <div class="single-property mt-30">
+                        <div class="property-img">
+                            <a href="propiedades/apartamentos-arandanos.html">
+                                <img src="propiedades/images/apartamentos-rionegro-arandanos/inicio.jpg" alt="">
+                                <span class="level-stryker">ARRIENDO</span>
+                            </a>
+                        </div>
+                        <div class="property-desc">
+                            <h4><a href="#">Apartamentos</a></h4>
+                            <p>
+                                <span class="location">Rionegro</span>
+                                <span class="property-info">2 Apartamentos disponibles para arriendo </span>
+                            </p>
+                            <div class="price-box">
+                                <p>Precio $1.600.000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Finaliza Propidad -->
+
+            </div> <!-- Finaliza Fila Apartamenos --> 
+
+
+            <div class="row">  <!-- Fila Lotes -->
+                <h1>Lotes</h1>
+
+                <!-- Propiedad Datos -->
+                <div class="propiedad col-lg-3 col-sm-6" data-tipo="lote" data-ubicacion="el carmen de viboral" data-precio="360000000" data-categoria="venta">
+                    <div class="single-property mt-30">
+                        <div class="property-img">
+                            <a href="propiedades/lote-carmen.html">
+                                <img src="propiedades/images/lote-el-carmen/inicio.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="property-desc">
+                            <h4><a href="#">Lote 100%</a></h4>
+                            <p>
+                                <span class="location">El Carmen de Viboral</span>
+                                <span class="property-info">3.200 mt2 con estcrituras al 100% </span>
+                            </p>
+                            <div class="price-box">
+                                <p>Precio $360.000.000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Finaliza Propidad -->
+
+                 <!-- Propiedad Datos -->
+                <div class="propiedad col-lg-3 col-sm-6" data-tipo="lote" data-ubicacion="san vicente" data-precio="180000000" data-categoria="venta">
+                    <div class="single-property mt-30">
+                        <div class="property-img">
+                            <a href="propiedades/lote-vereda-enea.html">
+                                <img src="propiedades/images/lote-vereda-enea/imagen-1.jpeg" alt="">
+                            </a>
+                        </div>
+                        <div class="property-desc">
+                            <h4><a href="#">Lote 100%</a></h4>
+                            <p>
+                                <span class="location">San Vicente Ferrer</span>
+                                <span class="property-info"> Lotes desde 4.000 metros cuadrados, a 5 kilometros de San Vicente </span>
+                            </p>
+                            <div class="price-box">
+                                <p>Precio $180.000.000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Finaliza Propidad -->
+
+                <!-- Propiedad Datos -->
+                <div class="propiedad col-lg-3 col-sm-6" data-tipo="lote" data-ubicacion="el carmen de viboral" data-precio="360000000" data-categoria="venta">
+                    <div class="single-property mt-30">
+                        <div class="property-img">
+                            <a href="propiedades/lote-carmen.html">
+                                <img src="propiedades/images/lote-el-carmen/inicio.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="property-desc">
+                            <h4><a href="#">Lote 100%</a></h4>
+                            <p>
+                                <span class="location">El Carmen de Viboral</span>
+                                <span class="property-info">3.200 mt2 con estcrituras al 100% </span>
+                            </p>
+                            <div class="price-box">
+                                <p>Precio $360.000.000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Finaliza Propidad -->
+
+
+            </div> <!-- Finaliza Fila Lotes --> 
+
+
+
+        </div>
+    </div>
+    <!-- Featured Properites End -->
+
+    <!-- Location Module Section Start -->
+    <div class="location-section section pt-70 pt-md-50 pt-sm-30">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-5">
+                    <a href="#" class="location-module mt-30">
+                        <img src="images/banner/banner-01.jpg" alt="">
+                        <div class="location-module__cont">
+                            <h3 class="location-module__name">Casas</h3>
+                            <span class="location-module__badge">Oportunidad</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-7 col-md-7">
+                    <a href="#" class="location-module mt-30">
+                        <img src="images/banner/banner-02.jpg" alt="">
+                        <div class="location-module__cont">
+                            <h3 class="location-module__name">Apartamentos</h3>
+                            <span class="location-module__badge">Oportunidad</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-7 col-md-7">
+                    <a href="#" class=" location-module mt-30">
+                        <img src="images/banner/banner-03.jpg" alt="">
+                        <div class="location-module__cont">
+                            <h3 class="location-module__name">Oficinas</h3>
+                            <span class="location-module__badge">Oportunidad</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-5 col-md-5">
+                    <a href="#" class="location-module mt-30">
+                        <img src="images/banner/banner-04.jpg" alt="">
+                        <div class="location-module__cont">
+                            <h3 class="location-module__name">Fincas</h3>
+                            <span class="location-module__badge">Oportunidad</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Location Module Section End -->
+
+    <!-- Featured Properites Start -->
+    <div class="featured-properites-section section  pt-100 pt-md-80 pt-sm-60">
+        <div class="container">
+
+            <div class="section-title text-left mb-60 mb-md-50 mb-sm-50">
+                <h2>Propiedades Destacadas</h2>
+            </div>
+
+            <div class="product-slider row">
+
+                <div class="col px-3">
+                    <!-- single-property Start -->
+                    <div class="single-property">
+                        <div class="property-img">
+                            <a href="#">
+                                <img src="images/propiedades/destacadas/property-01.jpg" alt="">
+                            </a>
+                            <span class="level-stryker">VENTA</span>
+                        </div>
+                        <div class="property-desc">
+                            <h4><a href="#">Apartamento</a></h4>
+                            <p>
+                                <span class="location">Torres del Pinar - Segundo Piso</span>
+                                <span class="property-info">58 Mt2, 3 Habitaciones, 1 Baño</span>
+                            </p>
+                            <div class="price-box">
+                                <p>Precio $180.000.000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Finaliza Propidad -->
+
+                <div class="col px-3">
+                    <!-- single-property Start -->
+                    <div class="single-property">
+                        <div class="property-img">
+                            <a href="#">
+                                <img src="images/propiedades/destacadas/property-02.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="property-desc">
+                            <h4><a href="#">Casa Finca</a></h4>
+                            <p>
+                                <span class="location">Via la Ceja - Rionegro</span>
+                                <span class="property-info">2750 Mt2 Terreno, 400 Mt2 Casa</span>
+                            </p>
+                            <div class="price-box">
+                                <p>Precio $2.950.000.000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Finaliza Propidad -->
+
+                <div class="col px-3">
+                    <!-- single-property Start -->
+                    <div class="single-property">
+                        <div class="property-img">
+                            <a href="#">
+                                <img src="images/propiedades/destacadas/property-03.jpg" alt="">
+                            </a>
+                            <span class="level-stryker-2">VENTA</span>
+                        </div>
+                        <div class="property-desc">
+                            <h4><a href="#">Lote Guarne</a></h4>
+                            <p>
+                                <span class="location">3360 Mt2, Cerca a la Autopista</span>
+                                <span class="property-info">Pascuita parte baja, escritura 100%</span>
+                            </p>
+                            <div class="price-box">
+                                <p>Precio $630.000.000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Finaliza Propidad -->
+
+                <div class="col px-3">
+                    <!-- single-property Start -->
+                    <div class="single-property">
+                        <div class="property-img">
+                            <a href="#">
+                                <img src="images/propiedades/destacadas/property-bg.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="property-desc">
+                            <h4><a href="#">Lote Vereda Belen</a></h4>
+                            <p>
+                                <span class="location">1150 Mt2 Terreno - 316 Mt2 Edificio</span>
+                                <span class="property-info">Edificio de 4 Pisos</span>
+                            </p>
+                            <div class="price-box">
+                                <p>Precio $1.200.000.000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Finaliza Propidad -->
+
+                <div class="col px-3">
+                    <!-- single-property Start -->
+                    <div class="single-property">
+                        <div class="property-img">
+                            <a href="#">
+                                <img src="images/propiedades/destacadas/property-bg.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="property-desc">
+                            <h4><a href="#">Local Comercial</a></h4>
+                            <p>
+                                <span class="location">Parque Principal Marinilla</span>
+                                <span class="property-info">A media cuadra del parque </span>
+                            </p>
+                            <div class="price-box">
+                                <p>Precio $900.000.000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Finaliza Propidad -->
+
+                <div class="col px-3">
+                    <!-- single-property Start -->
+                    <div class="single-property">
+                        <div class="property-img">
+                            <a href="#">
+                                <img src="images/propiedades/destacadas/property-bg.jpg" alt="">
+                            </a>
+                            <span class="level-stryker-2">VENTA</span>
+                        </div>
+                        <div class="property-desc">
+                            <h4><a href="#">Casa Finca</a></h4>
+                            <p>
+                                <span class="location">Escrituras al 100% 340 Mt2</span>
+                                <span class="property-info">1 Casa - 2 Apartamentos</span>
+                            </p>
+                            <div class="price-box">
+                                <p>Precio $650.000.000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Finaliza Propidad -->
+
+                <div class="col px-3">
+                    <!-- single-property Start -->
+                    <div class="single-property">
+                        <div class="property-img">
+                            <a href="#">
+                                <img src="images/propiedades/destacadas/property-bg.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="property-desc">
+                            <h4><a href="#">Casa el Retiro</a></h4>
+                            <p>
+                                <span class="location">142 Mt2 Lote - Casa 114.5 Mt2</span>
+                                <span class="property-info">2 Habitaciones, 3 Baños</span>
+                            </p>
+                            <div class="price-box">
+                                <p>Precio $899.000.000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Finaliza Propidad -->
+
+                <div class="col px-3">
+                    <!-- single-property Start -->
+                    <div class="single-property">
+                        <div class="property-img">
+                            <a href="#">
+                                <img src="images/propiedades/destacadas/property-bg.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="property-desc">
+                            <h4><a href="#">Apartamento Condomino</a></h4>
+                            <p>
+                                <span class="location">Primer Piso, 60 Mt2</span>
+                                <span class="property-info">2 habitaciones, 2 baños, parqueadero</span>
+                            </p>
+                            <div class="price-box">
+                                <p>Precio $400.000.000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Finaliza Propidad -->
+
+            </div>
+
+        </div>
+    </div>
+    <!-- Featured Properites End -->
+
+    <!-- About Section Start -->
+    <div class="about-section section pt-100 pt-md-80 pt-sm-60">
+        <div class="container">
+            <div class="row gy-5 justify-content-between align-items-center">
+
+                <div class="col-lg-4 offset-lg-1 col-md-5">
+                    <div class="about-properties-area">
+                        <div class="about-slider_bg"></div>
+                        <div class="about-properties-slider">
+                            <div class="about-properties-item">
+                                <div class="image"><img src="images/nosotros/us-1.jpg" alt=""></div>
+                            </div>
+
+                            <div class="about-properties-item">
+                                <div class="image"><img src="images/nosotros/us-2.jpg" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-7">
+                    <div class="about-content">
+                        <h2>Somos tus mejores aliados<br> en arriendo y venta</h2>
+                        <p>Nos esforzamos por brindar a cada uno de nuestros clientes un servicio excepcional, y hacemos todo lo posible para ayudarles a encontrar la propiedad perfecta para sus necesidades</p>
+
+                        <div class="row gy-4 row-25">
+
+                            <div class="col-md-6 col-sm-6">
+                                <div class="about-feature">
+                                    <div class="icon"><img src="images/icons/feature-2.png" alt=""></div>
+                                    <div class="content">
+                                        <h4>Experiencia y Conocimiento</h4>
+                                        <p>Nuestro equipo de profesionales cuenta con años de experiencia en el mercado inmobiliario y un profundo conocimiento del sector. Esto nos permite ofrecer un servicio informado y eficiente a nuestros clientes</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <div class="about-feature">
+                                    <div class="icon"><img src="images/icons/service-1.png" alt=""></div>
+                                    <div class="content">
+                                        <h4>Selección</h4>
+                                        <p>Ofrecemos una amplia gama de propiedades, incluyendo viviendas, lotes, fincas, edificios comerciales y más. Esto significa que nuestros clientes tienen distintas opciones para comodarse a su gusto</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <div class="about-feature">
+                                    <div class="icon"><img src="images/icons/service-6.png" alt=""></div>
+                                    <div class="content">
+                                        <h4>Servicio Personalizado</h4>
+                                        <p>Ofrecemos un servicio personalizado a cada uno de nuestros clientes, adaptándonos a sus necesidades individuales y brindándoles una atención y apoyo excepcionales. Trabajamos incansablemente para que el proceso de compra y venta sea lo más sencillo posible</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <div class="about-feature">
+                                    <div class="icon"><img src="images/icons/service-5.png" alt=""></div>
+                                    <div class="content">
+                                        <h4>Precios Competitivos</h4>
+                                        <p>Ofrecemos precios competitivos en todas nuestras propiedades, lo que significa que nuestros clientes obtienen un buen valor por su dinero</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- About Section End -->
+
+    
+
+   
+
+    <!-- Our Agents Section Start -->
+    <div class="our-agents-section section pt-100 pt-md-80 pt-sm-60 pb-100 pb-md-80 pb-sm-60 ">
+        <div class="container">
+
+            <div class="section-title text-center mb-30 mb-md-20 mb-sm-20">
+                <h2>Nuestro Personal</h2>
+                <p> Somos un equipo de expertos con amplia experiencia<br/>
+                    en la compra, venta, arrendamiento y administración de propiedades</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <!-- Our Agents Start -->
+                    <div class="our-agents mt-30">
+                        <div class="agents-image">
+                            <img src="images/profile/profile-one.jpg" alt="">
+
+                            <div class="agents-info">
+                                <h3>Detalles</h3>
+                                <div class="agents-social">
+                                    <ul>
+                                        <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="https://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="agents-contents">
+                            <h4>Vendedor</h4>
+                            <p>Agente Bank Raiz</p>
+                        </div>
+                    </div>
+                    <!-- Our Agents End -->
+                </div>
+
+                <div class="col-lg-3 col-sm-6">
+                    <!-- Our Agents Start -->
+                    <div class="our-agents mt-30">
+                        <div class="agents-image">
+                            <img src="images/profile/profile-two.jpg" alt="">
+
+                            <div class="agents-info">
+                                <h3>Detalles</h3>
+                                <div class="agents-social">
+                                    <ul>
+                                        <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="https://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="agents-contents">
+                            <h4>Administrador</h4>
+                            <p>Agente Bank Raiz</p>
+                        </div>
+                    </div>
+                    <!-- Our Agents End -->
+                </div>
+
+                <div class="col-lg-3 col-sm-6">
+                    <!-- Our Agents Start -->
+                    <div class="our-agents mt-30">
+                        <div class="agents-image">
+                            <img src="images/profile/profile-three.jpg" alt="">
+
+                            <div class="agents-info">
+                                <h3>Detalles</h3>
+                                <div class="agents-social">
+                                    <ul>
+                                        <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="https://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="agents-contents">
+                            <h4>Vendedor</h4>
+                            <p>Agente Bank Raiz</p>
+                        </div>
+                    </div>
+                    <!-- Our Agents End -->
+                </div>
+
+                <div class="col-lg-3 col-sm-6">
+                    <!-- Our Agents Start -->
+                    <div class="our-agents mt-30">
+                        <div class="agents-image">
+                            <img src="images/profile/profile-four.jpg" alt="">
+
+                            <div class="agents-info">
+                                <h3>Detalles</h3>
+                                <div class="agents-social">
+                                    <ul>
+                                        <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="https://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="agents-contents">
+                            <h4>Gerente</h4>
+                            <p>Agente Bank Raiz</p>
+                        </div>
+                    </div>
+                    <!-- Our Agents End -->
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- Our Agents Section End -->
+
+    <!-- About Section Start -->
+    <div class="about-section section counter-bg pt-75 pt-md-55 pt-sm-35 pb-100 pb-md-80 pb-sm-60">
+        <div class="container">
+
+            <!-- Project Count Area Start -->
+            <div class="row project-count">
+                <div class="col-lg-3 col-sm-6 col-6">
+                    <!-- counter start -->
+                    <div class="counter text-center mt-25">
+                        <h3 class="counter-active">900</h3>
+                        <p>Propiedades en Venta</p>
+                    </div>
+                    <!-- counter end -->
+                </div>
+                <div class="col-lg-3 col-sm-6 col-6">
+                    <!-- counter start -->
+                    <div class="counter  text-center mt-25">
+                        <h3 class="counter-active">20</h3>
+                        <p>Empleados</p>
+                    </div>
+                    <!-- counter end -->
+                </div>
+                <div class="col-lg-3 col-sm-6 col-6">
+                    <!-- counter start -->
+                    <div class="counter  text-center mt-25">
+                        <h3 class="counter-active">220</h3>
+                        <p>Clientes Felices</p>
+                    </div>
+                    <!-- counter end -->
+                </div>
+                <div class="col-lg-3 col-sm-6 col-6">
+                    <!-- counter start -->
+                    <div class="counter  text-center mt-25">
+                        <h3 class="counter-active">850</h3>
+                        <p>Propiedades Disponibles</p>
+                    </div>
+                    <!-- counter end -->
+                </div>
+            </div>
+            <!-- Project Count Area End -->
+
+        </div>
+    </div>
+    <!-- About Section End -->
+
+  
+
+    <!-- Footer Section Start -->
+    <footer class="footer-section section ">
+
+        <div class="info fixed-bottom pt-2 pb-3">
+
+            <a target="_blank" href="https://wa.me/+573118080211">
+                <img src="images/whatsapp.svg" alt="">
+            </a>
+        </div>
+
+        <div class="footer-top footer-bg pt-60 pt-md-40 pt-sm-20 pb-100 pb-md-80 pb-sm-60">
+            <div class="container">
+                <div class="row">
+                    <div class="col-coustom-3 col-lg-3 col-sm-6">
+                        <!-- Footer-widget Start -->
+                        <div class="footer-widget mt-40">
+                            <div class="footer-title">
+                                <h3>Nosotros</h3>
+                            </div>
+                            <div class="footer-info">
+                                <p>Somos un equipo de expertos con amplia experiencia en la compra, venta, arrendamiento y administración de propiedades</p>
+                                <p>Nos apasiona ayudar a nuestros clientes a encontrar el hogar de sus sueños y a resolver cualquier problema relacionado con el mercado inmobiliario</p>
+
+                                <!-- mailchimp-alerts Start -->
+                                <div class="mailchimp-alerts text-centre">
+                                    <div class="mailchimp-submitting"></div>
+                                    <!-- mailchimp-submitting end -->
+                                    <div class="mailchimp-success"></div>
+                                    <!-- mailchimp-success end -->
+                                    <div class="mailchimp-error"></div>
+                                    <!-- mailchimp-error end -->
+                                </div>
+                                <!-- mailchimp-alerts end -->
+                            </div>
+                        </div>
+                        <!-- Footer-widget End -->
+                    </div>
+
+
+                    <div class="col-coustom-3 col-lg-3 col-sm-6">
+                        <!-- Footer-widget Start -->
+                        <div class="footer-widget mt-40">
+                            <div class="footer-title">
+                                <h3>Accesos</h3>
+                            </div>
+                            <div class="footer-info">
+                                <ul class="footer-list">
+                                    <li><a href="service.html">Servicios</a></li>
+                                    <li><a href="agent.html">Agent</a></li>
+                                    <li><a href="properties.html">Propiedades</a></li>
+                                    <li><a href="features.html">Features</a></li>
+                                    <li><a href="blog.html">From Blog</a></li>
+                                    <li><a href="contact-us.html">Contacto</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Footer-widget End -->
+                    </div>
+                    <div class="col-coustom-3 col-lg-3 col-sm-6">
+                        <!-- Footer-widget Start -->
+                        <div class="footer-widget mt-40">
+                            <div class="footer-title">
+                                <h3>Contáctenos</h3>
+                            </div>
+                            <div class="footer-info">
+                                <ul class="footer-list">
+                                    <li>
+                                        <div class="contact-text">
+                                            <i class="glyph-icon flaticon-placeholder"></i>
+                                            <p>Calle 29 <br>Marinilla - Antioquia</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="contact-text">
+                                            <i class="glyph-icon flaticon-call"></i>
+                                            <p>
+                                                <span>Teléfono: <a href="tel:+573118080211"> 311 808 0211</a>
+                                            </p>
+
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="contact-text">
+                                            <i class="glyph-icon flaticon-earth"></i>
+                                            <p>
+                                                <span>Email : <a href="mailto:info@bankraiz.com">info@bankraiz.com</a></span>
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Footer-widget End -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy;
+                    <script>
+                        document.write(new Date().getFullYear() + ' ');
+                    </script> Copyright Bank Raiz - Todos los Derechos Reservados</p>
+            </div>
+        </div>
+
+    </footer>
+    <!-- Footer Section End -->
+
+
+    <!-- JS
+    ============================================ -->
+
+    <!-- Map js code here -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3nDHy1dARR-Pa_2jjPCjvsOR4bcILYsM"></script>
+    <!-- Plugins JS -->
+    <script src="js/plugins.js"></script>
+    <!-- Map Active JS -->
+    <script src="js/maplace-active.js"></script>
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+
+
+    <script>
+        function filtrar() {
+          var tipo = document.getElementById("tipo").value;
+          var categoria = document.getElementById("categoria").value;
+          var ubicacion = document.getElementById("ubicacion").value.toLowerCase();
+          var precioMin = parseInt(document.getElementById("precioMin").value) || 0;
+          var precioMax = parseInt(document.getElementById("precioMax").value) || Infinity;
+        
+          var propiedades = document.querySelectorAll('.propiedad');
+        
+          propiedades.forEach(function(propiedad) {
+            var tipoPropiedad = propiedad.getAttribute('data-tipo');
+            var categoriaPropiedad = propiedad.getAttribute('data-categoria');
+            var ubicacionPropiedad = propiedad.getAttribute('data-ubicacion').toLowerCase();
+            var precioPropiedad = parseInt(propiedad.getAttribute('data-precio'));
+        
+            if ((tipo === "" || tipoPropiedad === tipo) &&
+                (categoria === "" || categoriaPropiedad === categoria) &&
+                (ubicacion === "" || ubicacionPropiedad.includes(ubicacion)) &&
+                (precioPropiedad >= precioMin && precioPropiedad <= precioMax)) {
+              propiedad.style.display = "block";
+            } else {
+              propiedad.style.display = "none";
+            }
+          });
+        }
+    </script>
+
+
+</body>
+
+</html>
